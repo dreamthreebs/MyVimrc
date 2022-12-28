@@ -85,8 +85,8 @@ set incsearch
 set showmatch       
 set matchtime=2    
 
-"set list
-"set lcs=tab:\|\ ,nbsp:%,trail:-
+set list
+set lcs=tab:\|\ ,nbsp:%,trail:·
 highlight LeaderTab guifg=#666666
 match LeaderTab /^\t/
 
@@ -131,6 +131,9 @@ let g:fzf_colors =
 "autocmd Filetype markdown noremap ,m :MarkdownPreview<CR>
 "autocmd Filetype markdown noremap ,ms :MarkdownPreviewStop<CR>
 
+"gruvbox setup
+autocmd vimenter * ++nested colorscheme gruvbox
+set bg=dark
 
 call plug#begin('~/.vim/plugged')
 "Plug 'https://gitee.com/mirrors/vimtex.git', {'for': ['tex']}
@@ -142,7 +145,7 @@ Plug 'https://gitee.com/ProVim/vim-easymotion'
 "Plug 'https://gitee.com/zgpio/LeaderF'
 "Plug 'ghifarit53/tokyonight-vim'
 "Plug 'morhetz/gruvbox'
-"Plug 'https://gitee.com/linuor/gruvbox'
+Plug 'https://gitee.com/linuor/gruvbox'
 Plug 'https://gitee.com/zgpio/coc.nvim',{'branch': 'release'}
 "CocInstall cocjedi
 Plug 'https://gitee.com/dazhixia/fzf',{ 'dir': '~/.fzf', 'do': './install --all' }
