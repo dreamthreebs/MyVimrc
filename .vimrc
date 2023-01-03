@@ -25,6 +25,9 @@ nnoremap <leader>b :Buffers <CR>
 noremap <leader>h :bp <CR>
 noremap <leader>l :bn <CR>
 noremap <leader>s :Lines <CR>
+noremap <leader>wq :wq <CR>
+noremap <leader>wr :w <CR>
+noremap <leader>q :q <CR>
 
 "ctrl key
 noremap <C-h> <C-w>h
@@ -32,6 +35,9 @@ noremap <C-l> <C-w>l
 noremap <C-k> <C-w>w
 noremap <C-j> <C-w>j
 nnoremap <C-n> :NERDTreeToggle<CR>
+
+nnoremap sd $
+nnoremap sa 0
 
 set statusline=%F%m%r%h%w\----[POS=%l,%v]----[%p%%]\----%{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 set laststatus=1
@@ -101,6 +107,7 @@ let g:apc_enable_ft = {'*':1}
 
 "easymotion setup
 nmap ss <Plug>(easymotion-s2)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
 
 "fzf setup
 nnoremap <silent> <c-p> :Files <CR>
