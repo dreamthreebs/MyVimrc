@@ -20,7 +20,7 @@ noremap <leader>c :set nonu<CR>:set mouse=r<CR>
 noremap <leader>cc :set nu<CR>:set mouse=a<CR>
 noremap <leader>t :Tags<CR>
 noremap <leader>r :Rg<CR>
-noremap <leader>q :!ctags %<CR>
+noremap <leader>ct :!ctags %<CR>
 nnoremap <leader>b :Buffers <CR>
 noremap <leader>h :bp <CR>
 noremap <leader>l :bn <CR>
@@ -38,6 +38,7 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 
 nnoremap sd $
 nnoremap sa 0
+nnoremap sw gM
 
 set statusline=%F%m%r%h%w\----[POS=%l,%v]----[%p%%]\----%{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 set laststatus=1
